@@ -39,16 +39,6 @@ $(document).on('click', '.next', function() {
     curQuestion++;
     $('.question' + curQuestion).show();
 
-    if (curQuestion == 4) {
-        $('.title').css('visibility', 'visible');
-        $('.title').text('Backend');
-    } else if (curQuestion == 5) {
-        $('.title').css('visibility', 'visible');
-        $('.title').text('Frontend');
-    } else {
-        $('.title').css('visibility', 'hidden');
-    }
-
     if (curQuestion == 5) {
         $('.number').text('4');
     } else {
@@ -68,16 +58,6 @@ $(document).on('click', '.previous', function() {
     $('.question' + curQuestion).hide();
     curQuestion--;
     $('.question' + curQuestion).show();
-
-    if (curQuestion == 4) {
-        $('.title').css('visibility', 'visible');
-        $('.title').text('Backend');
-    } else if (curQuestion == 5) {
-        $('.title').css('visibility', 'visible');
-        $('.title').text('Frontend');
-    } else {
-        $('.title').css('visibility', 'hidden');
-    }
 
     $('.number').text(curQuestion);
 });
