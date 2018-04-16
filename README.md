@@ -19,5 +19,5 @@ Open `index.html` in your browser of choice
 #### Libaries used:
 * [Bootstrap](https://github.com/twbs/bootstrap)
   * [jQuery](https://github.com/jquery/jquery)
-  * [Popper.js](https://github.com/FezVrasta/popper.js/)
+  * [Popper.js](https://github.com/FezVrasta/popper.js)
 * [FontAwesome](https://github.com/FortAwesome/Font-Awesome)
