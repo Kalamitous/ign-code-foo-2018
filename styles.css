@@ -1,0 +1,132 @@
+body {
+    overflow-x: hidden;
+    margin: 0;
+    font-family: "Roboto";
+    background-color: #17252a;
+    color: #17252a;
+}
+
+p {
+    text-align: justify;
+    padding-right: 20px;
+}
+
+canvas {
+    z-index: -9999;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+hr {
+    margin-right: 20px;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.box {
+    margin: 20px 20px 20px 0px;
+    padding: 20px 20px 8px 20px;
+    background-color: #2b7a78;
+}
+
+.box p {
+    text-align: left;
+}
+
+.question {
+    display: inline-block;
+    position: absolute;
+    top: calc(50% - 34vh);
+    left: calc(50% - 49.5vh);
+    transform: translate(-50%, -50%);
+    padding-top: 8px;
+    font-family: "Roboto Condensed";
+}
+
+.next, .previous, .code {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    width: 20vh;
+    padding-top: 8px;
+    text-align: center;
+    font-family: "Roboto Condensed";
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
+
+.next {
+    top: calc(50% + 34vh);
+    left: calc(50% + 49.5vh);
+}
+
+.previous {
+    top: calc(50% - 22.7vh);
+    left: calc(50% - 49.5vh);
+}
+
+.code {
+    top: calc(50% + 22.7vh);
+    left: calc(50% + 49.5vh);
+}
+
+.next:hover, .previous:hover {
+    cursor: pointer;
+}
+
+.content {
+    visibility: hidden;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50vh;
+    height: 50vh;
+}
+
+.content iframe {
+    width: 50vh;
+    height: 50vh;
+    border: 0;
+    border-radius: 10px;
+}
+
+.question5 {
+    top: calc(50% - 5vh);
+}
+
+.btn {
+    margin-top: 10px;
+    border-radius: 0px;
+    background-color: #2b7a78;
+    color: #000000;
+}
+
+.btn:hover {
+    background-color: #17252a;
+}
+
+.btn:focus, .active:focus {
+    box-shadow: none !important;
+}
+
+.simplebar-track.horizontal {
+    display: none;
+}
+
+@media(max-height: 900px) {
+    h1 {
+      font-size: 30px;
+    }
+}
+@media(max-height: 720px) {
+    h1 {
+      font-size: 24px;
+    }
+}

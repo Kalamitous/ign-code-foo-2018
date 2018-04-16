@@ -1,0 +1,171 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:700" rel="stylesheet">  
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/simplebar/2.6.1/simplebar.css">
+        <link rel="stylesheet" href="styles.css">
+        <link rel="shortcut icon" type="image/ico" href="images/favicon.ico" />
+
+        <title>IGN Code Foo 2018 - David Ning</title>
+    </head>
+	<body>
+        <div class="question">
+            <h1>QUESTION <span class="number">1</span></h1>
+        </div>
+        <div class="next">
+            <h1>NEXT</h1>
+        </div>
+        <div class="previous">
+            <h1>PREVIOUS</h1>
+        </div>
+        <div class="code">
+            <h1>VIEW CODE</h1>
+        </div>
+        <div class="content question1">
+            <p>
+                My name is <span class="bold">David Ning</span>, an aspiring video game developer planning on majoring in computer science. Ever since I laid my hands on a computer at the age of six, technology has been a major influence in my life. At the start of middle school, I began teaching myself to code by modding a game called Garry’s Mod. I eventually became proficient enough to sell my creations on an online marketplace, earning a total over $9,000. I soon progressed to programming background visuals for the rhythm game osu!, then to making 2D games with the LÖVE engine. In high school, I began to explore territories beyond game development, specifically software engineering and web development. I also took computer science courses and extracurriculars to reinforce my programming knowledge.
+            </p>
+            <p>
+                I discovered IGN around the same time I picked up gaming as a hobby in elementary school. I would always turn to IGN to stay up to date with the gaming world and watch game reviews before making a purchase. Due to the amount of gaming-related videos I watch on YouTube, my recommended feed is filled with IGN content, which I often couldn’t help but tune in to while doing homework. Over the years, IGN has become my most reliable and entertaining source for game-related news.
+            </p>
+            <p>
+                Because my programming skills were self-taught, I am aware that I lack certain knowledge and skills. I would love to work as a programmer in a formal setting to bridge the gap between my current skills and the practical skills required in the workplace. Given my love for video game development, web development, and software engineering, what better place than to work than at IGN? It would be my pleasure to work on something that I am passionate about and for something that has had a significant impact in my life. I believe that IGN’s Code Foo program will help me develop the skills necessary to bring my aspirations of working in the video game development industry to fruition.
+            </p>
+        </div>
+        <div class="content question2">
+            <p>
+                Before we begin, we will assume that the gaps from the lattice structure of the former Eiffel Tower will still be present in the new Eiffel Tower, and that the gaps formed by Geomags™ can be neglected since we cannot melt and mold them into solid shapes. We will also assume that Newton will allow the new Eiffel Tower to even exist.
+            </p>
+            <p>
+                The mass of the former Eiffel Tower is 7.300E6 kg. It is made of puddled wrought iron which has a density of 7.850E3 kg/m^3. By dividing its mass by its density, we get the volume of the former Eiffel Tower to be 9.299E2 m^3. Its surface area is 2.200E5 m^2.
+            </p>
+            <p>
+                To simplify the approximation process, we can represent the volume and surface area of the former Eiffel Tower with a rectangular prism:
+            </p>
+            <div class="box">
+                <p>
+                    x = length and width of rectangular prism<br/>
+                    y = height of rectangular prism<br/>
+                </p>
+                <p>
+                    x^2 * y = 9.299E2 m^3 (volume)<br/>
+                    2 * x^2 + 4 * xy = 2.200E5 m^2 (surface area)<br/>
+                </p>
+                <p>
+                    x = 3.317E2 m<br/>
+                    y = 8.454E-3 m<br/>
+                </p>
+            </div>
+            <p>
+                By intersecting the two curves above, we can find that the dimensions of the rectangular prism are 3.317E2 x 3.317E2 x 8.454E-3 m; however, because the height of the rectangular prism is less than the diameter of a Geomags™ ball (1.270E-2 m), we must refactor the dimensions of the rectangular prism to accommodate at least one layer of Geomags™. This is done by setting the new rectangular prism height (y_n) to the Geomags™ ball diameter (b), and determining the rectangular prism length and width (x_n) that produces the same rectangular prism volume:
+            </p>
+            <div class="box">
+                <p>
+                    r (Geomags™ rod length) = 2.700E-2 m<br/>
+                    b (Geomags™ ball diameter) = 1.270E-2 m<br/>
+                </p>
+                <p>
+                    y_n = b<br/>
+                </p>
+                <p>
+                    x_n^2 * y_n = 9.299E2 m^3 (volume)<br/>
+                </p>
+                <p>
+                    x_n = 2.706E2 m<br/>
+                </p>
+            </div>
+            <p>
+                The new dimensions of the rectangular prism are 2.706E2 x 2.706E2 x 1.270E-2 m. This retains the volume of the former Eiffel Tower but decreases its surface area from 2.200E5 m^2 to 1.465E5 which is still relatively close. Because the rectangular prism is a single Geomags™ ball high, we can treat it as a plane when in terms of Geomags™ instead of meters. The plane is essentially a square grid. The amount (a) of Geomags™ rods in each row or column of the square grid can be found by taking the refactored length and width of the rectangular prism (x_n), subtracting it by the length of a Geomags™ ball (b), and dividing by the length of a Geomags™ ball-rod pair (b + r). The reason for subtracting (x_n) by (b) is that the length and width of the square grid requires Geomags™ balls on both ends, and a ball-rod pair will always be missing a ball at one end. The equation is shown below:
+            </p>
+            <div class="box">
+                <p>
+                    a = (x_n - b) / (b + r) = 6816 (rounded)<br/>
+                </p>
+            </div>
+            <p>
+                    The total number of Geomags™ rods and balls are given by the following equations:
+            </p>
+            <div class="box">
+                <p>
+                    2 * [a * (a + 1)] + a^2 = 139,387,200 (Geomags™ rods)<br/>
+                    (a + 1)^2 = 46,471,489 (Geomags™ balls)<br/>
+                </p>
+            </div>
+            <p>
+                2 * [a * (a + 1)] returns the amount of Geomags™ rods in the grid. We multiply 2 to [a * (a + 1)] because [a * (a + 1)] only gives the total number of horizontal or vertical rods. We are adding a^2 to this amount because we are inserting an extra Geomags™ rod in between each square of the grid to form a triangular lattice, offering more strength in the structure. This will cause the plane to turn oblique but will be inconsequential since the plane will eventually be taken out of shape.    
+            </p>
+            <p>
+                The new Eiffel Tower will need approximately 139,387,200 Geomags™ rods and 46,471,489 Geomags™ balls.
+            </p>
+            <hr>
+            <p>
+                Constructing the new Eiffel Tower will require an area of flat land. To speed things up, many workers will also be needed. First, we will break down common shapes found in the former Eiffel Tower into reusable Geomags™ parts. Instead of building the new Eiffel Tower by attaching Geomags™ one by one, we will mass produce these parts and attach them to each other. Now, we will begin building from the bottom up. The four legs will each be built simultaneously by groups of workers. To ensure that each leg will be symmetrical to the others, a single architectural plan will be drawn for each group to follow. Next, the first platform will be built on top of the four legs, with scaffolds to hold it up until it is fully constructed. We will then repeat the previous steps to build the continuation of the four legs and the next three platforms. Cranes will be needed to transport workers and materials as the construction of the new Eiffel Tower progresses to higher altitudes.    
+            </p>
+        </div>
+        <div class="content question3">
+            <p>
+                The user is able to set the dimensions of the grid as well as the percent chance that each tile of the grid is a pothole. In this case, we create a 4 x 4 grid with a 25% chance that each tile will be a pothole.
+            </p>
+            <p>
+                After the grid is initialized as a two-dimensional array, a tile from the leftmost column of the grid is randomly selected as the starting point. If a pothole exists at the starting tile, the pothole is removed.
+            </p>
+            <p>
+                Paths are generated recursively. The tiles to the right, above, and below the starting tile will be checked for potholes in this order. If they are not potholes, each of these tiles will then go through the same process until a tile on the rightmost column is reached. To prevent backtracking, it is made sure that the tile above or below the current tile is not the same tile that had just been checked. The tile to the right of the current tile does not need to be checked for backtracking because Henny Penny will never move left, ensuring that any tile to the right of Henny Penny is a new tile.
+            </p>
+            <p>
+                Because the rules state that (0, 0) is the bottom-left corner of the grid and two-dimensional arrays start at the top-left corner, some calculations must be made to form the correct coordinates of the tile:
+            </p>
+            <div class="box">
+                <p>
+                    t (total number of rows) = 4 (in this case)<br/>
+                </p>
+                <p>
+                    c = column of current tile<br/>
+                    r = row of current tile<br/>
+                </p>
+            </div>
+            <p>
+                The correct coordinates of the tile are (c, t - 1 - r). In each call of the pathfinding algorithm, the coordinates of the current tile will be combined with the coordinates of tiles that have been checked before it to form a path string. This path will then be passed on to the next recursive call. If the rightmost column is reached, the path will be added to an ArrayList where it can be easily looped and printed.
+            </p>
+            <p>
+                This solution can be implemented with grids of any amount of rows or columns. The maximum amount of valid paths is equal to r^(c - 1). This number can be very high for a relatively large grid with a lack of potholes and may cause the Java heap to run out of space.
+            </p>
+        </div>
+        <div class="content question4">
+            <h2>Backend</h2>
+            <p>
+                The fields that can be stored for each content item are the GUID, category, title, description, publish date, link, slug, networks, state, tags, and compact, medium, and large thumbnail links. The link will not need to be stored because it can be generated in the application layer knowing its base URL (http://www.ign.com/), category, and slug. For a similar reason, the ‘http://’ at the beginning of the thumbnail link and the ‘_compact.jpg’, ’_medium.jpg’, or ‘_large.jpg’ at the end of the thumbnail link will be removed when storing the thumbnail link. This will also remove the need to store three thumbnail links. The GUID will be stored as a 24-byte character, the publish date will be stored as a datetime, and the rest of the fields will be stored as variable characters.
+            </p>
+            <p>
+                Initially, the database contains one table (Items) with the ID, GUID, category, title, description, publish date, slug, networks, state, tags, and thumbnail link fields. This new ID field will be explained in the next paragraph. To bring this database to the first normal form, fields that can have multiple values must be broken down into their atomic values. The fields that can have multiple values are the networks (assumed because of its plural form) and tags fields. Removing these two fields from the table and creating two new tables, one with the ID and networks fields (ItemNetworks) and the other with the ID and tags fields (ItemTags), will bring the database to the first normal form. The database is already in the second and third normal forms because all non-key fields are directly dependent on the ID field, the primary key.
+            </p>
+            <p>
+                Using the GUID field as the primary key has a considerable performance impact on the database because a clustered index is automatically created. GUIDs do not receive much benefit from indexing as they are generated randomly, not sequentially. To fix this problem, an ID field will be created. This field will be an auto-increment integer and serve as the primary key instead of the GUID field. Assuming that the database will update as new content is pushed, a non-clustered index is still needed on the GUID field to guarantee that each new record is unique. A practical use for this database is to search and return data from all fields of a record based on date or tags. This means a non-clustered index is needed on the publish date and tags fields.
+            </p>
+            <p>
+                Pulling records based on tags from the ‘ItemTags‘ table will only return the tags and the ID, which is used to retrieve data from the other fields in the Items table. On the flip side, pulling records based on date from the Items table will return all the fields except for tags and networks, which will also need the ID to be retrieved from the ‘ItemTags‘ and ‘ItemNetworks‘ tables. Because there are more queries with ‘WHERE‘ clauses that involve the ID field, a clustered index is created on the ID field instead of the date or tags fields. A non-clustered index is also created on the ID fields in the ‘ItemTags‘ and ‘ItemNetworks‘ because they are foreign keys referring to the primary key in the ‘Items‘ table.
+            </p>
+            <p>
+                In my service, each page of the RSS feed is iterated from the first page, and each content item is stored in the database. This will continue until either a content item with an existing GUID in the database or the end of the RSS feed is reached.
+            </p>
+        </div>
+        <div class="content question5">
+            <h2>Frontend</h2>
+            <iframe src=frontend/index.html></iframe>
+
+            <div class="text-right">
+                <a href="frontend/index.html" target="_blank"><button type="button" class="btn btn-default">View Full Size</button></a>
+            </div>
+        </div>
+
+        <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/91/three.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/simplebar/2.6.1/simplebar.js"></script>
+        <script src="index.js"></script>
+	</body>
+</html>
